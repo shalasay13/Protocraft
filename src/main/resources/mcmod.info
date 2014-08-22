@@ -1,0 +1,21 @@
+[
+{
+  "modid": "Protocraft",
+  "name": "protocraft",
+  "description": "protocraft blah blah",
+  "version": "1.7.2-1.0",
+  "mcversion": "1.7.1",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "shalasay13"
+  ],
+  "credits": "shalasay13",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
