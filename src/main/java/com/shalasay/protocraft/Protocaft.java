@@ -1,5 +1,8 @@
 package com.shalasay.protocraft;
 
+import assets.protocraft.textures.utility.LogHelper;
+import com.shalasay.protocraft.init.ModItems;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -15,7 +18,11 @@ public class Protocaft
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        LogHelper.info("Pre Initialization Complete!");
 
+        ModItems.init();
     }
 
     @Mod.EventHandler
