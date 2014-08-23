@@ -1,4 +1,4 @@
-package assets.protocraft.textures.utility;
+package com.shalasay.protocraft.utility;
 
 import com.shalasay.protocraft.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
