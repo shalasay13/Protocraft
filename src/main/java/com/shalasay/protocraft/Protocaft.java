@@ -1,6 +1,7 @@
 package com.shalasay.protocraft;
 
 import com.shalasay.protocraft.handler.ConfigurationHandler;
+import com.shalasay.protocraft.init.ModBlock;
 import com.shalasay.protocraft.init.ModItems;
 import com.shalasay.protocraft.proxy.IProxy;
 import com.shalasay.protocraft.utility.LogHelper;
@@ -26,9 +27,11 @@ public class Protocaft
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-        LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
+        ModBlock.init();
+
+        LogHelper.info("Pre Initialization Complete!");
     }
 
     @Mod.EventHandler

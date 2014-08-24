@@ -182,6 +182,9 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="sean" />
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Protocraft.iml" filepath="$PROJECT_DIR$/Protocraft.iml" />
